@@ -1,16 +1,22 @@
-# Virtual environment
+# Ignore virtual environments
 .venv/
-.env/
-env/
 
-# Python cache
+# Ignore Python cache files
 _pycache_/
 *.py[cod]
 
-# IDEs
+# Ignore Django migration files (optional)
+/migrations/.py
+!*/migrations/_init_.py
+
+# Ignore database and local settings
+db.sqlite3
+.env
+
+# Ignore IDE/editor folders
 .vscode/
 .idea/
 
-# OS
+# Ignore OS system files
 .DS_Store
 Thumbs.db
