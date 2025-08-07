@@ -2,10 +2,10 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def home(request):
-  return HttpResponse("<h1>Welcome to Project-UdaanPath: Home page</h1>")
+  return render(request, 'website/index.html')
 
 def about(request):
-  return HttpResponse("<h1>Welcome to Project-UdaanPath: About page</h1>")
+  return render(request, 'website/about.html')
 
 def contact(request):
-  return HttpResponse("<h1>Welcome to Project-UdaanPath: Contact page</h1>")
+  return render(request, 'website/contact.html')
